@@ -1,0 +1,223 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #1f2632;
+  position: relative;
+}
+
+#app {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.itsLoading {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 35%;
+  left: 50%;
+}
+
+.advice {
+  top: -17px;
+  width: 540px;
+  background-color: #323a49;
+  border-radius: 14px;
+  padding: 48px;
+  position: relative;
+  text-align: center;
+  min-height: 240px;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  -webkit-box-shadow: #0000001f 20px 20px 20px 0px;
+          box-shadow: #0000001f 20px 20px 20px 0px;
+}
+
+.advice__inner {
+  text-align: center;
+}
+
+.advice__id {
+  color: #52ffa8;
+  display: block;
+  margin-bottom: 24px;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.advice__text {
+  display: block;
+  color: #cee3e9;
+  margin-bottom: 78px;
+  font-size: 1.7em;
+  font-weight: 800;
+  line-height: 38px;
+  letter-spacing: 0.05px;
+}
+
+.advice__separator {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 72px;
+  left: 50%;
+}
+
+.advice__separator-mobile {
+  display: none;
+}
+
+.advice__btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background-color: #52ffa8;
+  outline: none;
+  border: 0;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.advice__btn svg {
+  top: 2px;
+  position: relative;
+}
+
+.advice__btn:hover {
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0px #79b697, 0 0 20px #52ffa8, 0 0 35px #52ffa8;
+          box-shadow: 0 0 0px #79b697, 0 0 20px #52ffa8, 0 0 35px #52ffa8;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  color: #cee3e9;
+}
+
+.attribution a {
+  color: #52ffa8;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .advice {
+    margin: auto;
+    top: 120px;
+    width: 343px;
+    padding: 40px 18px;
+  }
+  .advice__separator {
+    display: none;
+  }
+  .advice__separator-mobile {
+    display: block;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 62px;
+    left: 50%;
+  }
+  .advice__text {
+    font-size: 1.45em;
+    line-height: 34px;
+    margin-bottom: 60px;
+  }
+  .advice__id {
+    font-size: 11px;
+    margin-bottom: 23px;
+  }
+  #app {
+    display: initial;
+  }
+}
+/*# sourceMappingURL=style.css.map */
