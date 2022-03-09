@@ -4,7 +4,7 @@ Vue.createApp({
   setup() {
     let advice = ref({});
     let loading = ref(Boolean);
-    loading.value = true;
+    loading.value = false;
 
     function randomAdvice() {
       loading.value = true;
@@ -12,7 +12,7 @@ Vue.createApp({
         fetch("https://api.adviceslip.com/advice")
           .then((data) => data.json())
           .then((response) => {
-            loading.value = true;
+            loading.value = false;
             return (advice.value = response.slip);
           });
       }, 1000);
