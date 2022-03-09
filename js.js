@@ -1,11 +1,6 @@
-const { reactive, createApp, ref, computed, watch, onMounted } = Vue;
+const { createApp, ref, onMounted } = Vue;
 
 Vue.createApp({
-  data() {
-    return {
-      message: "Hello Vue!",
-    };
-  },
   setup() {
     let advice = ref({});
     let loading = ref(Boolean);
@@ -25,6 +20,10 @@ Vue.createApp({
 
     onMounted(() => randomAdvice());
 
-    return { advice, randomAdvice, loading };
+    return {
+      advice,
+      randomAdvice,
+      loading,
+    };
   },
 }).mount("#app");
