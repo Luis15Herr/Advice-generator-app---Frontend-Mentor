@@ -12,7 +12,7 @@ Vue.createApp({
         fetch("https://api.adviceslip.com/advice")
           .then((data) => data.json())
           .then((response) => {
-            loading.value = false;
+            loading.value = true;
             return (advice.value = response.slip);
           });
       }, 1000);
