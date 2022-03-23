@@ -23,7 +23,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="" id="app">
+    <main id="app">
       <div class="advice">
         <div v-if="loading" class="itsLoading">
           <div class="lds-ring">
@@ -36,11 +36,6 @@
         <div v-else class="advice__inner">
           <span class="advice__id">ADVICE ID # {{advice.id}}</span>
           <span class="advice__text">“{{advice.advice}}”</span>
-          <!-- <span class="advice__id">ADVICE #117</span>
-          <span class="advice__text"
-            >“It is easy to sit up and take notice, what's difficult is getting
-            up and taking action.”</span
-          > -->
         </div>
         <img
           class="advice__separator"
@@ -61,7 +56,7 @@
           </svg>
         </button>
       </div>
-    </div>
+    </main>
 
     <div class="attribution">
       Challenge by

@@ -89,6 +89,7 @@ body {
 .advice__btn {
   position: absolute;
   bottom: 0;
+  display: block;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
